@@ -1,0 +1,227 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  background: url("") no-repeat center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+/* ================= HERO CONTENT ================= */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  padding: 12px 30px;
+  background: #00adb5;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #028a91;
+  transform: translateY(-3px);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.section.dark {
+  background: #222;
+  color: #fff;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+/* ================= ABOUT ================= */
+.section p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+/* ================= TIMELINE ================= */
+.timeline {
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+.timeline-item {
+  background: #fff;
+  color: #222;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #00adb5;
+  border-radius: 5px;
+}
+
+.section.dark .timeline-item {
+  background: #333;
+  color: #fff;
+}
+
+.timeline-item span {
+  font-weight: bold;
+  color: #00adb5;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section.dark .card {
+  background: #333;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00adb5;
+}
+
+/* ================= CONTACT ================= */
+.contact-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-links a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .section {
+    padding: 60px 6%;
+  }
+}
